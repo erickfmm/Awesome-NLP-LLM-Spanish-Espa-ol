@@ -3,6 +3,7 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
 
 ## Otros Awesome similares
 * [LLMs In Spanish](https://github.com/drcaiomoreno/LLMsInSpanish)
+* [Lacuna Fund](https://lacunafund.org/language-resources/): Recursos varios
 
 ## LLM en español
 * [LINCE ZERO](https://huggingface.co/clibrain/lince-zero): Modelo español simple (ZERO)
