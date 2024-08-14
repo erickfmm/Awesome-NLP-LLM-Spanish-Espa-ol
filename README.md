@@ -22,7 +22,7 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
 * Departamento de Ciencias de la Computación Universidad de Chile (DCC Uchile)
   * [BETO](https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased): Modelo BERT Finetuneado de BERT-base (original de Google) con 768 dimensiones, entrenado en MASKED LANGUAGE y finetuneado en varias tareas más
   * [Patana](https://huggingface.co/dccuchile/patana-chilean-spanish-bert): Finetunning de BETO con texto de Chile
-  * [Tulio(https://huggingface.co/dccuchile/tulio-chilean-spanish-bert): Finetuning de BETO con texto de Chile y libros en Español.
+  * [Tulio](https://huggingface.co/dccuchile/tulio-chilean-spanish-bert): Finetuning de BETO con texto de Chile y libros en Español.
   * [Versiones livianas](https://github.com/dccuchile/lightweight-spanish-language-models)
 * [NV-Embed](https://huggingface.co/nvidia/NV-Embed-v1): Generador de Embeddings basado en un LLM Mistral (multi idioma)
 * [BETO finetuned on XNLI](https://huggingface.co/Recognai/bert-base-spanish-wwm-cased-xnli)
@@ -49,6 +49,9 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
   * NER & POS tagging	es, en
   * Contextualized Hate Speech Detection	es
   * Targeted Sentiment Analysis
+* [Gensim](): Para hacer LDA (Análisis de tópicos) y otras tareas.
+* pyLDAVis: Para visualizar los tópicos LDA generados con gensim
+* BERTopics: Para generar tópicos usando BERT
 
 ## VectorStores
 ### Word Vectors
