@@ -4,16 +4,18 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
 ## Otros Awesome similares
 * [LLMs In Spanish](https://github.com/drcaiomoreno/LLMsInSpanish)
 * [Lacuna Fund](https://lacunafund.org/language-resources/): Recursos varios
+* [SomosNLP](https://huggingface.co/somosnlp): Comunidad con hartos Datasets y modelos en Español
+* [PrevenIA](https://huggingface.co/PrevenIA): Fundado por el Ministerio de Salud de España, herramientas para prevenir el sui**dio, modelos y datasets
 
 ## LLM en español
-* [LINCE ZERO](https://huggingface.co/clibrain/lince-zero): Modelo español simple (ZERO)
+* [LINCE ZERO](https://huggingface.co/clibrain/lince-zero): Modelo español simple (ZERO), hay una versión FULL que hay que solicitarla
 * Projecte AINA (Español y catalán)
   * [Flor 1.3B-Instructed](https://huggingface.co/projecte-aina/FLOR-1.3B-Instructed)
   * [Flor 6.3B](https://huggingface.co/projecte-aina/FLOR-6.3B)
   * [Aguila 7B](https://huggingface.co/projecte-aina/aguila-7b): Basado en Falcon7B
 
 ### LLM multi idioma (incluye español)
-* [Meta LLama 3.1](): Versiones 8B, 12B, 400B
+* [Meta LLama 3.1](https://llama.meta.com/): Versiones 8B, 70B, 405B
 * Mistral
 * Mixtral 8x7B
 * Mixtral 8x22B
@@ -28,6 +30,7 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
 * [BETO finetuned on XNLI](https://huggingface.co/Recognai/bert-base-spanish-wwm-cased-xnli)
 * [BETO FINETUNED en Sentence Similarity](https://huggingface.co/hiiamsid/sentence_similarity_spanish_es)
 * [BETO finetuned en summarization](https://huggingface.co/mrm8488/bert2bert_shared-spanish-finetuned-summarization)
+* [Bertin Project](https://huggingface.co/bertin-project): Proyecto con datasets para crear un BERT en español. y modelos GPT.
 
 ## Librerías para usar NLP en español
 * [Spacy](https://spacy.io/models/es): Contiene 3 modelos basados en VectorStores y un modelo basado en Transformers.
@@ -49,9 +52,9 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
   * NER & POS tagging	es, en
   * Contextualized Hate Speech Detection	es
   * Targeted Sentiment Analysis
-* [Gensim](): Para hacer LDA (Análisis de tópicos) y otras tareas.
-* pyLDAVis: Para visualizar los tópicos LDA generados con gensim
-* BERTopics: Para generar tópicos usando BERT
+* [Gensim](https://radimrehurek.com/gensim/): Para hacer LDA (Análisis de tópicos).
+* [pyLDAVis](https://neptune.ai/blog/pyldavis-topic-modelling-exploration-tool-that-every-nlp-data-scientist-should-know): Para visualizar los tópicos LDA generados con gensim
+* [BERTopic](https://maartengr.github.io/BERTopic/index.html): Para generar tópicos usando BERT
 
 ## VectorStores
 ### Word Vectors
@@ -60,11 +63,16 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
 * [DCC Uchile](https://github.com/dccuchile/spanish-word-embeddings)
 
 ### Sentence Vectors
+* [Spanish Sentence Embeddings](https://github.com/BotCenter/spanish-sent2vec): Calculadas usando el dataset SUC y el programa [sent2vec](https://github.com/epfml/sent2vec)
 
 ## Datasets
+* [Coleccion de datasets en español por metatext](https://metatext.io/datasets-list/spanish-language)
+* [Bertin Project](https://huggingface.co/bertin-project): Proyecto para crear GPT y Bert en español. Tienen datasets de tipo Alpaca y similar (pares pregunta - respuesta para crear modelos Instruct)
+
+
 ### No etiquetado
 * DCC Uchile
-  * [Spanish Unanotated Corpora](https://github.com/josecannete/spanish-corpora): Usado para entrenar BETO
+  * [Spanish Unanotated Corpora (SUC)](https://github.com/josecannete/spanish-corpora): Usado para entrenar BETO
   * [Spanish Books](https://huggingface.co/datasets/jorgeortizfuentes/spanish_books)
   * [Chilean Spanish Corpus](https://huggingface.co/datasets/jorgeortizfuentes/chilean-spanish-corpus)
   * [Universal Spanish Chilean Corpus](https://huggingface.co/datasets/jorgeortizfuentes/universal_spanish_chilean_corpus): La suma de los dos anteriores (aparentemente)
@@ -72,7 +80,10 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
 * [Wikipedia as TXT](https://huggingface.co/datasets/daqc/wikipedia-txt-spanish)
 * [Wiktionary](https://huggingface.co/datasets/carloscapote/es.wiktionary.org): Diccionario de la Wikipedia en español
 * [9322 letras de rap en español](https://www.kaggle.com/datasets/smunoz3801/9325-letras-de-rap-en-espaol/data)
+* [Poemas en español](https://huggingface.co/datasets/andreamorgar/spanish_poetry)
 * [Wikibooks (Multi idioma)](https://www.kaggle.com/datasets/dhruvildave/wikibooks-dataset)
+* [15k Noticias en español](https://huggingface.co/datasets/BrauuHdzM/noticias-en-espanol)
+* [TEDx En español](https://huggingface.co/datasets/ittailup/tedx_spanish)
 * Obtenidos mediante Scraping a datos públicos MINEDUC (Ministerio de Educación de Chile)
   * [Proyectos Educativos Institucionales (PEI)](https://www.kaggle.com/datasets/erickfmm/education-pei-pdf): En pdf
   * [Reglamentos de Convivencia](https://www.kaggle.com/datasets/erickfmm/education-reglamento-convivencia-pdf): En pdf
@@ -88,3 +99,8 @@ Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM
 * [HateSpeech (Multi idioma)](https://www.kaggle.com/datasets/wajidhassanmoosa/multilingual-hatespeech-dataset)
 * [STS (Sentence Similarity) Traducido con DeepL a varios idiomas](https://huggingface.co/datasets/PhilipMay/stsb_multi_mt)
 * [DWUG ES: Diachronic Word Usage Graphs for Spanish](https://zenodo.org/records/6433667#.YmGU7i8lP0o)
+* [Diagnósticos médicos en español, y si son dentales o no](https://huggingface.co/datasets/fvillena/spanish_diagnostics)
+
+### Mapudungun
+* [Mapudungun corpus cleaned](https://github.com/mingjund/mapudungun-corpus)
+* [Corpus of Historical Mapudungun (CHM)](https://benmolineaux.github.io/)
