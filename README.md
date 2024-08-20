@@ -1,5 +1,6 @@
 # Awesome-NLP-LLM-Spanish-Espa-ol
 Listado de recursos, datasets, modelos, cursos y otros relacionados al NLP y LLM en Español
+Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de Aprendizaje](/ruta-de-aprendizaje.md)
 
 ## Otros Awesome similares
 * [LLMs In Spanish](https://github.com/drcaiomoreno/LLMsInSpanish)
