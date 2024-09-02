@@ -18,9 +18,14 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 
 ### LLM multi idioma (incluye español)
 * [Meta LLama 3.1](https://llama.meta.com/): Versiones 8B, 70B, 405B
-* Mistral
+* [Mistral 7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
 * Mixtral 8x7B
-* Mixtral 8x22B
+* [Mistral Large (123B)](https://huggingface.co/mistralai/Mistral-Large-Instruct-2407)
+* [Mistral Nemo (12B)](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
+* [Mixtral 8x22B](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)
+* [Phi 3.5 mini](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
+* [Phi 3.5 MoE](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct)
+* [Phi 3.5 Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
 
 ## Modelos BERT, BART y Transformers en Español
 * Departamento de Ciencias de la Computación Universidad de Chile (DCC Uchile)
