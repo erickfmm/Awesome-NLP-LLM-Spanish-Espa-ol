@@ -20,19 +20,19 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 
 ### LLM multi idioma (incluye español)
 * Facebook
- * [Meta Llama 3.2](https://huggingface.co/collections/unsloth/llama-32-all-versions-66f46afde4ca573864321a22): Versiones 1B, 3B, 11B(Vision), 90B
- * [Meta LLama 3.1](https://llama.meta.com/): Versiones 8B, 70B, 405B
+  * [Meta Llama 3.2](https://huggingface.co/collections/unsloth/llama-32-all-versions-66f46afde4ca573864321a22): Versiones 1B, 3B, 11B(Vision), 90B
+  * [Meta LLama 3.1](https://llama.meta.com/): Versiones 8B, 70B, 405B
 * Mistral AI
- * [Mistral 7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
- * [Ministral 8B](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
- * Mixtral 8x7B
- * [Mistral Large (123B)](https://huggingface.co/mistralai/Mistral-Large-Instruct-2407)
- * [Mistral Nemo (12B)](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
- * [Mixtral 8x22B](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)
+  * [Mistral 7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
+  * [Ministral 8B](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
+  * Mixtral 8x7B
+  * [Mistral Large (123B)](https://huggingface.co/mistralai/Mistral-Large-Instruct-2407)
+  * [Mistral Nemo (12B)](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
+  * [Mixtral 8x22B](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)
 * Microsoft
- * [Phi 3.5 mini](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
- * [Phi 3.5 MoE](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct)
- * [Phi 3.5 Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
+  * [Phi 3.5 mini](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
+  * [Phi 3.5 MoE](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct)
+  * [Phi 3.5 Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
 * [Molmo](https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19)
 * [EuroLLM](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct): Por utter project, consorcio de varias universidades de Alemania
 * [Apollo](https://huggingface.co/collections/FreedomIntelligence/apollomoe-and-apollo2-670ddebe3bb1ba1aebabbf2c): Profesor de una universidad China
