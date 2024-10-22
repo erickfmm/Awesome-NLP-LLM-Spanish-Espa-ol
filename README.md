@@ -53,7 +53,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [Detección de información personal por token](https://huggingface.co/iiiorg/piiranha-v1-detect-personal-information)
 
 ## Traducción
-* nllb-200 (Facebook): Versiones 1.3B y 3.3B
+* nllb-200 (Facebook): Versiones [1.3B](https://huggingface.co/facebook/nllb-200-1.3B) y [3.3B](https://huggingface.co/facebook/nllb-200-3.3B) y versiones distilled
 * [Seamless (Facebook)](https://huggingface.co/facebook/seamless-m4t-v2-large): Audio a texto, texto a texto
 
 ## Speech Recognition
@@ -110,6 +110,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * [Universal Spanish Chilean Corpus](https://huggingface.co/datasets/jorgeortizfuentes/universal_spanish_chilean_corpus): La suma de los dos anteriores (aparentemente)
 * [Wikihow en español](https://huggingface.co/datasets/daqc/wikihow-spanish)
 * [Wikipedia as TXT](https://huggingface.co/datasets/daqc/wikipedia-txt-spanish)
+* [Wikipedia oficial](https://huggingface.co/datasets/wikimedia/wikipedia/viewer/20231101.es)
 * [Wiktionary](https://huggingface.co/datasets/carloscapote/es.wiktionary.org): Diccionario de la Wikipedia en español
 * [9322 letras de rap en español](https://www.kaggle.com/datasets/smunoz3801/9325-letras-de-rap-en-espaol/data)
 * [Poemas en español](https://huggingface.co/datasets/andreamorgar/spanish_poetry)
@@ -122,6 +123,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * [Reglamentos de Evaluación](https://www.kaggle.com/datasets/erickfmm/education-reglamentos-de-evaluacin-pdf): En pdf
 
 ### Etiquetado
+* [Datasets QA en HF](https://huggingface.co/datasets?task_categories=task_categories:question-answering&language=language:es&sort=trending)
 * [HEAR - Hispanic Emotional Accompaniment Responses](https://huggingface.co/datasets/BrunoGR/HEAR-Hispanic_Emotional_Accompaniment_Responses?row=2): Se usaron datos sintéticos para balancear dataset. par pregunta-respuesta para acompañamiento emocional
 * [Punta Cana reviews](https://huggingface.co/datasets/beltrewilton/punta-cana-spanish-reviews): útil para sistemas recomendadores u otras tareas
 * [Reviews de hoteles de Andalucia](https://www.kaggle.com/datasets/chizhikchi/andalusian-hotels-reviews-unbalanced)
@@ -134,5 +136,6 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [Diagnósticos médicos en español, y si son dentales o no](https://huggingface.co/datasets/fvillena/spanish_diagnostics)
 
 ### Mapudungun
+* [HuggingFace](https://huggingface.co/datasets?language=language:arn&sort=trending)
 * [Mapudungun corpus cleaned](https://github.com/mingjund/mapudungun-corpus)
 * [Corpus of Historical Mapudungun (CHM)](https://benmolineaux.github.io/)
