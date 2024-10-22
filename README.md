@@ -91,6 +91,26 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [Gensim](https://radimrehurek.com/gensim/): Para hacer LDA (Análisis de tópicos).
 * [pyLDAVis](https://neptune.ai/blog/pyldavis-topic-modelling-exploration-tool-that-every-nlp-data-scientist-should-know): Para visualizar los tópicos LDA generados con gensim
 * [BERTopic](https://maartengr.github.io/BERTopic/index.html): Para generar tópicos usando BERT
+* LLM
+  * Ejecutar, cuantizar
+    * transformers (HuggingFace)
+    * Llamacpp
+    * [ONNX](https://github.com/onnx/onnx)
+    * Ollama
+  * RAG
+    * Llama Index
+    * LangChain
+  * Agentes y memoria
+    * LangGraph
+    * [Phidata](https://github.com/phidatahq/phidata)
+  * No-code o Low-code
+    * Langflow
+    * LangGraph-desktop
+ * Finetunning (Full,PEFT,MEFT, etc)
+   * Ludwig
+   * Unsloth
+   * Llama-Factory
+   * AutoTrain (HuggingFace)
 
 ## VectorStores
 ### Word Vectors
