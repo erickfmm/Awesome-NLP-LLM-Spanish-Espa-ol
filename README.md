@@ -15,10 +15,14 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * [Flor 1.3B-Instructed](https://huggingface.co/projecte-aina/FLOR-1.3B-Instructed)
   * [Flor 6.3B](https://huggingface.co/projecte-aina/FLOR-6.3B)
   * [Aguila 7B](https://huggingface.co/projecte-aina/aguila-7b): Basado en Falcon7B
+* [Salamandra](https://huggingface.co/collections/BSC-LT/salamandra-66fc171485944df79469043a): por BSC
+
 
 ### LLM multi idioma (incluye español)
+* [Meta Llama 3.2](https://huggingface.co/collections/unsloth/llama-32-all-versions-66f46afde4ca573864321a22): Versiones 1B, 3B, 11B(Vision), 90B
 * [Meta LLama 3.1](https://llama.meta.com/): Versiones 8B, 70B, 405B
 * [Mistral 7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
+* [Ministral 8B](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
 * Mixtral 8x7B
 * [Mistral Large (123B)](https://huggingface.co/mistralai/Mistral-Large-Instruct-2407)
 * [Mistral Nemo (12B)](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
@@ -26,6 +30,9 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [Phi 3.5 mini](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
 * [Phi 3.5 MoE](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct)
 * [Phi 3.5 Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
+* [Molmo](https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19)
+* [EuroLLM](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct): Por utter project, consorcio de varias universidades de Alemania
+* [Apollo](https://huggingface.co/collections/FreedomIntelligence/apollomoe-and-apollo2-670ddebe3bb1ba1aebabbf2c): Profesor de una universidad China
 
 ## Modelos BERT, BART y Transformers en Español
 * Departamento de Ciencias de la Computación Universidad de Chile (DCC Uchile)
@@ -38,6 +45,24 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [BETO FINETUNED en Sentence Similarity](https://huggingface.co/hiiamsid/sentence_similarity_spanish_es)
 * [BETO finetuned en summarization](https://huggingface.co/mrm8488/bert2bert_shared-spanish-finetuned-summarization)
 * [Bertin Project](https://huggingface.co/bertin-project): Proyecto con datasets para crear un BERT en español. y modelos GPT.
+* [JinaAI](https://huggingface.co/jinaai/jina-embeddings-v3): Multi idioma, multi tarea query-retrieval
+* [LaBSE](https://huggingface.co/sentence-transformers/LaBSE): Multi idioma
+
+## Named Entity Recognition
+* [Wikineural](https://huggingface.co/Babelscape/wikineural-multilingual-ner)
+* [Detección de información personal por token](https://huggingface.co/iiiorg/piiranha-v1-detect-personal-information)
+
+## Traducción
+* nllb-200 (Facebook): Versiones 1.3B y 3.3B
+* [Seamless (Facebook)](https://huggingface.co/facebook/seamless-m4t-v2-large): Audio a texto, texto a texto
+
+## Speech Recognition
+* [Whisper (v3 large turbo)](https://huggingface.co/openai/whisper-large-v3-turbo): Modelo de OpenAI, versiones [small](https://huggingface.co/openai/whisper-small), [tiny](https://huggingface.co/openai/whisper-tiny)
+* [Canary (Nvidia)](https://huggingface.co/nvidia/canary-1b)
+
+## Texto To Speech
+* [MMS (Facebook)](https://huggingface.co/facebook/mms-tts-spa): Español
+* [Bark (Suno)](https://huggingface.co/suno/bark): Multiidioma
 
 ## Librerías para usar NLP en español
 * [Spacy](https://spacy.io/models/es): Contiene 3 modelos basados en VectorStores y un modelo basado en Transformers.
