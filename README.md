@@ -16,10 +16,11 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * [Flor 6.3B](https://huggingface.co/projecte-aina/FLOR-6.3B)
   * [Aguila 7B](https://huggingface.co/projecte-aina/aguila-7b): Basado en Falcon7B
 * [Salamandra](https://huggingface.co/collections/BSC-LT/salamandra-66fc171485944df79469043a): por BSC
-
+* [LLM Latino](https://www.latamgpt.org/) (aún es un proyecto en curso, no han lanzado su primer modelo)
 
 ### LLM multi idioma (incluye español)
 * Facebook
+  * Meta LLama 3.3: Por el momento sólo versión [70B](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
   * [Meta Llama 3.2](https://huggingface.co/collections/unsloth/llama-32-all-versions-66f46afde4ca573864321a22): Versiones 1B, 3B, 11B(Vision), 90B
   * [Meta LLama 3.1](https://llama.meta.com/): Versiones 8B, 70B, 405B
 * Mistral AI
@@ -93,24 +94,28 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [BERTopic](https://maartengr.github.io/BERTopic/index.html): Para generar tópicos usando BERT
 * LLM
   * Ejecutar, cuantizar
-    * transformers (HuggingFace)
-    * Llamacpp
+    * [transformers (HuggingFace)](https://huggingface.co/docs/transformers/index): Para ejecutar, permite ejecutar cualquier modelo en estructura HF desde HuggingFace (cientos de miles o más), son modelos sin cuantizar
+    * [Llamacpp](https://github.com/ggerganov/llama.cpp): Permite ejecutar y cuantizar formato GGUF
     * [ONNX](https://github.com/onnx/onnx)
-    * Ollama
+    * [Ollama](https://ollama.com/)
   * RAG
-    * Llama Index
-    * LangChain
+    * [Llama Index](https://www.llamaindex.ai/)
+    * [LangChain](https://www.langchain.com/)
   * Agentes y memoria
-    * LangGraph
+    * [LangGraph](https://www.langchain.com/langgraph)
     * [Phidata](https://github.com/phidatahq/phidata)
+    * [Eliza](https://github.com/ai16z/eliza)
+    * [Autogen (Microsoft](https://github.com/microsoft/autogen)
+    * [Pydantic AI](https://github.com/pydantic/pydantic-ai)
   * No-code o Low-code
-    * Langflow
-    * LangGraph-desktop
+    * [Langflow](https://www.langflow.org/)
+    * [LangGraph studio](https://github.com/langchain-ai/langgraph-studio)
  * Finetunning (Full,PEFT,MEFT, etc)
-   * Ludwig
-   * Unsloth
-   * Llama-Factory
-   * AutoTrain (HuggingFace)
+   * [Ludwig](https://ludwig.ai/latest/)
+   * [Unsloth](https://unsloth.ai/)
+   * [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory): Tiene interfaz gráfica y es fácil de usar
+   * [AutoTrain (HuggingFace)](https://huggingface.co/autotrain)
+   * [TorchTune](https://pytorch.org/blog/torchtune-fine-tune-llms/): De PyTorch
 
 ## VectorStores
 ### Word Vectors
@@ -124,6 +129,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 ## Datasets
 * [Coleccion de datasets en español por metatext](https://metatext.io/datasets-list/spanish-language)
 * [Bertin Project](https://huggingface.co/bertin-project): Proyecto para crear GPT y Bert en español. Tienen datasets de tipo Alpaca y similar (pares pregunta - respuesta para crear modelos Instruct)
+* [Red Pajama](https://huggingface.co/datasets/latam-gpt/red_pajama_es_hq): Dataset ENORME en español de texto no estructurado para entrenar un LLM, con un score de 2 a 5 según su calidad académica
 
 
 ### No etiquetado
