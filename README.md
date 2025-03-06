@@ -19,10 +19,13 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [LLM Latino](https://www.latamgpt.org/) (aún es un proyecto en curso, no han lanzado su primer modelo)
 
 ### LLM multi idioma (incluye español)
-* Facebook
-  * Meta LLama 3.3: Por el momento sólo versión [70B](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
-  * [Meta Llama 3.2](https://huggingface.co/collections/unsloth/llama-32-all-versions-66f46afde4ca573864321a22): Versiones 1B, 3B, 11B(Vision), 90B
-  * [Meta LLama 3.1](https://llama.meta.com/): Versiones 8B, 70B, 405B
+* Meta/Facebook ([Meta Llama](https://www.llama.com/llama-downloads/))
+  * [Llama 2](https://huggingface.co/collections/meta-llama/metas-llama2-models-675bfd70e574a62dd0e40541): 7B, 13B, 70B
+  * [CodeLlama](https://huggingface.co/collections/meta-llama/code-llama-family-661da32d0a9d678b6f55b933): 7B, 13B, 34B, 70B
+  * [Llama 3](https://huggingface.co/collections/meta-llama/meta-llama-3-66214712577ca38149ebb2b6): 8B, 70B
+  * [LLama 3.1](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f): 8B, 70B, 405B
+  * [Llama 3.2](https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf): 1B, 3B, 11B (con Vision), 90B (con Visión)
+  * [Llama 3.3](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct): 70B
 * Mistral AI
   * [Mistral 7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
   * [Ministral 8B](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
@@ -34,6 +37,11 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * [Phi 3.5 mini](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
   * [Phi 3.5 MoE](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct)
   * [Phi 3.5 Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
+  * [Phi 4 mini](https://huggingface.co/microsoft/Phi-4-mini-instruct): 4B aprox (3.8)
+  * [Phi 4 Multimodal (Texto, Imagen, Audio)](https://huggingface.co/microsoft/Phi-4-multimodal-instruct): 6B aprox (5.6)
+* DeepSeek:
+  * [R1](https://huggingface.co/deepseek-ai/DeepSeek-R1): MoE de 687B en total, Entrenado solamente en Inglés y Chino, su rendimiento en español es malo y viene del modelo base y datos residuales
+  * [Distill Qwen 1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B): 1.5B, Entrenado solamente en Inglés y Chino, su rendimiento en español es malo y viene del modelo base y datos residuales
 * [Molmo](https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19)
 * [EuroLLM](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct): Por utter project, consorcio de varias universidades de Alemania
 * [Apollo](https://huggingface.co/collections/FreedomIntelligence/apollomoe-and-apollo2-670ddebe3bb1ba1aebabbf2c): Profesor de una universidad China
@@ -44,13 +52,18 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * [Patana](https://huggingface.co/dccuchile/patana-chilean-spanish-bert): Finetunning de BETO con texto de Chile
   * [Tulio](https://huggingface.co/dccuchile/tulio-chilean-spanish-bert): Finetuning de BETO con texto de Chile y libros en Español.
   * [Versiones livianas](https://github.com/dccuchile/lightweight-spanish-language-models)
-* [NV-Embed](https://huggingface.co/nvidia/NV-Embed-v1): Generador de Embeddings basado en un LLM Mistral (multi idioma)
 * [BETO finetuned on XNLI](https://huggingface.co/Recognai/bert-base-spanish-wwm-cased-xnli)
-* [BETO FINETUNED en Sentence Similarity](https://huggingface.co/hiiamsid/sentence_similarity_spanish_es)
 * [BETO finetuned en summarization](https://huggingface.co/mrm8488/bert2bert_shared-spanish-finetuned-summarization)
 * [Bertin Project](https://huggingface.co/bertin-project): Proyecto con datasets para crear un BERT en español. y modelos GPT.
-* [JinaAI](https://huggingface.co/jinaai/jina-embeddings-v3): Multi idioma, multi tarea query-retrieval
-* [LaBSE](https://huggingface.co/sentence-transformers/LaBSE): Multi idioma
+
+
+### Modelos de Embeddings para Sentence Similarity y Semantic Search
+* NV-Embed: [v1](https://huggingface.co/nvidia/NV-Embed-v1) y [v2](https://huggingface.co/nvidia/NV-Embed-v2): 7B, Generador de Embeddings basado en un LLM Mistral (multi idioma) multi tarea (prompted). Ventana de 4096 tokens.
+* [BETO FINETUNED en Sentence Similarity](https://huggingface.co/hiiamsid/sentence_similarity_spanish_es): 110M, entrenado con dataset STS traducido con DeepL. Ventana de 512 tokens.
+* [ModernBert finetuneado](https://huggingface.co/mrm8488/modernbert-embed-base-ft-sts-spanish-matryoshka-768-64): 149M, entrenado con STS traducido al español augmented (dataset privado) Ventana de 8192 tokens.
+* [JinaAI](https://huggingface.co/jinaai/jina-embeddings-v3): 572M, Multi idioma, multi tarea query-retrieval. Ventana de 8192 tokens.
+* [LaBSE](https://huggingface.co/sentence-transformers/LaBSE): 471M, Multi idioma, entrenado principalmente para tareas de parallel sentences (traducciones). Ventana de 256 tokens.
+* [BGE-M3](https://huggingface.co/BAAI/bge-m3): Multidioma. Ventana de 8192 tokens.
 
 ## Named Entity Recognition
 * [Wikineural](https://huggingface.co/Babelscape/wikineural-multilingual-ner): Multiidioma
@@ -60,6 +73,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 ## Traducción
 * nllb-200 (Facebook): Versiones [1.3B](https://huggingface.co/facebook/nllb-200-1.3B) y [3.3B](https://huggingface.co/facebook/nllb-200-3.3B) y versiones distilled
 * [Seamless (Facebook)](https://huggingface.co/facebook/seamless-m4t-v2-large): Audio a texto, texto a texto
+* Helsinki Opus [Inglés a Español](https://huggingface.co/Helsinki-NLP/opus-mt-en-es) y [Español a Inglés](https://huggingface.co/Helsinki-NLP/opus-mt-es-en)
 
 ## Speech Recognition
 * [Whisper (v3 large turbo)](https://huggingface.co/openai/whisper-large-v3-turbo): Modelo de OpenAI, versiones [small](https://huggingface.co/openai/whisper-small), [tiny](https://huggingface.co/openai/whisper-tiny)
@@ -68,6 +82,8 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 ## Texto To Speech
 * [MMS (Facebook)](https://huggingface.co/facebook/mms-tts-spa): Español
 * [Bark (Suno)](https://huggingface.co/suno/bark): Multiidioma
+* [Zonoz v0.1-Hybrid](https://huggingface.co/Zyphra/Zonos-v0.1-hybrid): 1.65B, Multiidioma
+* [Kokoro 1.0](https://huggingface.co/hexgrad/Kokoro-82M): 82M, modelo pequeñísimo. 8 idiomas y 54 voces, incluye español.
 
 ## Librerías para usar NLP en español
 * [Spacy](https://spacy.io/models/es): Contiene 3 modelos basados en VectorStores y un modelo basado en Transformers.
@@ -94,28 +110,37 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [BERTopic](https://maartengr.github.io/BERTopic/index.html): Para generar tópicos usando BERT
 * LLM
   * Ejecutar, cuantizar
-    * [transformers (HuggingFace)](https://huggingface.co/docs/transformers/index): Para ejecutar, permite ejecutar cualquier modelo en estructura HF desde HuggingFace (cientos de miles o más), son modelos sin cuantizar
+    * [transformers (HuggingFace)](https://huggingface.co/docs/transformers/index): Para ejecutar, permite ejecutar cualquier modelo en estructura HF desde HuggingFace (cientos de miles o más), son modelos sin cuantizar en general
     * [Llamacpp](https://github.com/ggerganov/llama.cpp): Permite ejecutar y cuantizar formato GGUF
-    * [ONNX](https://github.com/onnx/onnx)
-    * [Ollama](https://ollama.com/)
+    * [ONNX](https://github.com/onnx/onnx): Optimizado para on-device mobile, cuantizados o no
+    * [Ollama](https://ollama.com/): Genera un servidor web con una api para llamar a diferentes llm
   * RAG
     * [Llama Index](https://www.llamaindex.ai/)
     * [LangChain](https://www.langchain.com/)
   * Agentes y memoria
     * [LangGraph](https://www.langchain.com/langgraph)
-    * [Phidata](https://github.com/phidatahq/phidata)
+    * [Agno](https://github.com/agno-agi/agno): Incluye agentes, memoria, tool calling, es fácil de usar
+    * [SmolAgents (HuggingFace)](https://github.com/huggingface/smolagents): De HuggingFace, agentes y muchas tools, muy fácil de usar y simple
     * [Eliza](https://github.com/ai16z/eliza)
     * [Autogen (Microsoft](https://github.com/microsoft/autogen)
     * [Pydantic AI](https://github.com/pydantic/pydantic-ai)
+    * [Vision Agent](https://github.com/landing-ai/vision-agent): Agente para visión
   * No-code o Low-code
     * [Langflow](https://www.langflow.org/)
     * [LangGraph studio](https://github.com/langchain-ai/langgraph-studio)
+    * [Pyspur](https://github.com/PySpur-Dev/pyspur): Intuitivo con muchas características
  * Finetunning (Full,PEFT,MEFT, etc)
    * [Ludwig](https://ludwig.ai/latest/)
    * [Unsloth](https://unsloth.ai/)
    * [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory): Tiene interfaz gráfica y es fácil de usar
    * [AutoTrain (HuggingFace)](https://huggingface.co/autotrain)
-   * [TorchTune](https://pytorch.org/blog/torchtune-fine-tune-llms/): De PyTorch
+   * [TorchTune (PyTorch)](https://pytorch.org/blog/torchtune-fine-tune-llms/)
+   * [Nanotron (HuggingFace)](https://github.com/huggingface/nanotron): Con paralelismo 3D
+
+## Herramientas de observabilidad
+* [Opik](https://github.com/comet-ml/opik): Incluye dashboard
+* [Phoenix](https://github.com/Arize-ai/phoenix): Incluye dashboard
+* [Openllmetry](https://github.com/traceloop/openllmetry): Se integra con otros Dashboards, tiene muchas integraciones de modelos
 
 ## VectorStores
 ### Word Vectors
