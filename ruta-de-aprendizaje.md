@@ -52,9 +52,11 @@ Recomiendo verse varios cursos de Complexity Explorer y tener buenas bases de ma
 * Lectura recomendada (un poco dura y requiere conocimientos de matemáticas pero es bien explicativo, para leer con calma): https://boulderschool.yale.edu/sites/default/files/files/DayanAbbott.pdf
 
 # Devops (pasar desde un código a un producto en producción para todo el público)
-* Video muy recomendado de Docker:
-* Otro video que te explica mejor la arquitectura de Docker:
+* Video muy recomendado de Docker: https://www.youtube.com/watch?v=9eTVZwMZJsA
+* Otro video que te explica mejor la arquitectura de Docker: https://www.youtube.com/watch?v=gjRoNFopFig
 * Curso recomendadísimo muy completo y detallado de Kubernetes: https://livro.descomplicandokubernetes.com.br/es/day-1/
+* Video de git introductorio: https://www.youtube.com/watch?v=jGehuhFhtnE
+* Video de git por dentro y cómo funciona (cómo está construido, los comandos de bajo nivel): https://www.youtube.com/watch?v=LjwR--_ZUt8
 
 # Otras listas
 * Un poco antigua pero muy buena todavía: https://machinelearningmastery.com/start-here/
