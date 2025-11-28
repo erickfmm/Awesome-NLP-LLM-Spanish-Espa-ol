@@ -47,6 +47,8 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * Qwen3 (de Alibaba):
   * [Qwen 3](https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f): Serie de modelos que van desde los 0.6B, 1,7B, 4B, 8B, 14B, 32B, y versiones MoE de 30B-A3B (30B en total, 3B activados en cada predicción), 235B-A22B, y versiones actualizadas de los últimos dos modelos MoE
   * [Qwen Coder](https://huggingface.co/collections/Qwen/qwen3-coder-687fc861e53c939e52d52d10): Modelos orientados a la programación, son las versiones MoE finetuneadas
+* Kimi
+  * [Kimi K2 Thinking](https://huggingface.co/moonshotai/Kimi-K2-Thinking): Modelo de 1T, multiidioma, muy capaz a niveles del estado del arte 
 * [Molmo](https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19)
 * [EuroLLM](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct): Por utter project, consorcio de varias universidades de Alemania
 * [Apollo](https://huggingface.co/collections/FreedomIntelligence/apollomoe-and-apollo2-670ddebe3bb1ba1aebabbf2c): Profesor de una universidad China
@@ -71,6 +73,8 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [JinaAI](https://huggingface.co/jinaai/jina-embeddings-v3): 572M, Multi idioma, multi tarea query-retrieval. Ventana de 8192 tokens.
 * [LaBSE](https://huggingface.co/sentence-transformers/LaBSE): 471M, Multi idioma, entrenado principalmente para tareas de parallel sentences (traducciones). Ventana de 256 tokens.
 * [BGE-M3](https://huggingface.co/BAAI/bge-m3): Multidioma. Ventana de 8192 tokens.
+* [Embedding Gemma 300](https://huggingface.co/google/embeddinggemma-300m): Modelo más avanzado de Google, multiidioma
+* [Qwen3 Embedding 0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B): Hay versiones de 4B y más, pero este es más cercano al tamaño estándar, es un LLM que puedes usar como SentenceTransformer, lo que hace internamente es generar el texto dado el prompt que le das (o documento con prompt por defecto) y te genera una respuesta internamente, y te retorna el embedding correspondiente al último token generado.
 
 ## Named Entity Recognition
 * [Wikineural](https://huggingface.co/Babelscape/wikineural-multilingual-ner): Multiidioma
@@ -109,6 +113,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * Automatic speech recognition (ASR)
 
 ## Librerías para usar NLP en español
+* [Data dreamer](https://datadreamer.dev/docs/latest/pages/get_started/quick_tour/dataset_augmentation.html) para hacer data augmentation y generar datos sintéticos
 * [Spacy](https://spacy.io/models/es): Contiene 3 modelos basados en VectorStores y un modelo basado en Transformers.
   * tok2vec
   * morphologizer
@@ -128,9 +133,11 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * NER & POS tagging	es, en
   * Contextualized Hate Speech Detection	es
   * Targeted Sentiment Analysis
-* [Gensim](https://radimrehurek.com/gensim/): Para hacer LDA (Análisis de tópicos).
-* [pyLDAVis](https://neptune.ai/blog/pyldavis-topic-modelling-exploration-tool-that-every-nlp-data-scientist-should-know): Para visualizar los tópicos LDA generados con gensim
-* [BERTopic](https://maartengr.github.io/BERTopic/index.html): Para generar tópicos usando BERT
+* Tópicos:
+  * [Gensim](https://radimrehurek.com/gensim/): Para hacer LDA (Análisis de tópicos).
+  * [pyLDAVis](https://neptune.ai/blog/pyldavis-topic-modelling-exploration-tool-that-every-nlp-data-scientist-should-know): Para visualizar los tópicos LDA generados con gensim
+  * [BERTopic](https://maartengr.github.io/BERTopic/index.html): Para generar tópicos usando BERT, soporta también contextualizado y diversos métodos, muy completo
+  * [Contextualizado](https://github.com/MilaNLProc/contextualized-topic-models)
 * LLM
   * Ejecutar, cuantizar
     * [transformers (HuggingFace)](https://huggingface.co/docs/transformers/index): Para ejecutar, permite ejecutar cualquier modelo en estructura HF desde HuggingFace (cientos de miles o más), son modelos sin cuantizar en general
