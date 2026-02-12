@@ -8,6 +8,9 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [Lacuna Fund](https://lacunafund.org/language-resources/): Recursos varios
 * [SomosNLP](https://huggingface.co/somosnlp): Comunidad con hartos Datasets y modelos en Español
 * [PrevenIA](https://huggingface.co/PrevenIA): Fundado por el Ministerio de Salud de España, herramientas para prevenir el sui**dio, modelos y datasets
+* [Corpus: Evaluation datasets for ES & LATAM (SomosNLP)](https://huggingface.co/collections/somosnlp/corpus-evaluation-datasets-for-es-and-latam): Batería de datasets para evaluar LLMs en español y variantes (oro para benchmarks)
+* [Corpus: Instructions in Spanish and related languages (SomosNLP)](https://huggingface.co/collections/somosnlp/corpus-instructions-in-spanish-and-related-languages): Colección de datasets de instrucciones/SFT para afinar modelos en español
+* [Instruction-Tuned Models ES (SomosNLP)](https://huggingface.co/collections/somosnlp/instruction-tuned-models-es): Curación de modelos instruct en español y lenguas cercanas (ahorra horas de búsqueda)
 
 ## LLM en español
 * [LINCE ZERO](https://huggingface.co/clibrain/lince-zero): Modelo español simple (ZERO), hay una versión FULL que hay que solicitarla
@@ -15,7 +18,10 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * [Flor 1.3B-Instructed](https://huggingface.co/projecte-aina/FLOR-1.3B-Instructed)
   * [Flor 6.3B](https://huggingface.co/projecte-aina/FLOR-6.3B)
   * [Aguila 7B](https://huggingface.co/projecte-aina/aguila-7b): Basado en Falcon7B
-* [Salamandra](https://huggingface.co/collections/BSC-LT/salamandra-66fc171485944df79469043a): por BSC
+* [Salamandra](https://huggingface.co/collections/BSC-LT/salamandra-66fc171485944df79469043a): Familia de modelos por BSC-LT, muy buenos para español y otras lenguas europeas
+  * [salamandra-7b-instruct](https://huggingface.co/BSC-LT/salamandra-7b-instruct): Buen equilibrio calidad/costo, ideal para chat y tareas generales en ES
+  * [salamandra-2b-instruct](https://huggingface.co/BSC-LT/salamandra-2b-instruct): Versión ligera para correr y prototipar con menos recursos
+  * [Salamandra-VL-7B-2512](https://huggingface.co/BSC-LT/Salamandra-VL-7B-2512): Versión multimodal (visión+texto) potente, útil para investigación y demos (ojo con la licencia)
 * [LLM Latino](https://www.latamgpt.org/) (aún es un proyecto en curso, no han lanzado su primer modelo)
 
 ### LLM multi idioma (incluye español)
@@ -78,6 +84,8 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [Embedding Gemma 300](https://huggingface.co/google/embeddinggemma-300m): Modelo más avanzado de Google, multiidioma
 * [Qwen3 Embedding 0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B): Hay versiones de 4B y más, pero este es más cercano al tamaño estándar, es un LLM que puedes usar como SentenceTransformer, lo que hace internamente es generar el texto dado el prompt que le das (o documento con prompt por defecto) y te genera una respuesta internamente, y te retorna el embedding correspondiente al último token generado.
 * [Paraphrase Multilingual MiniLM](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2): 118M, modelo compacto y rápido para similitud semántica multilingüe, buen balance rendimiento-velocidad
+* [Paraphrase Multilingual MPNet](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2): Modelo multilingüe muy fuerte para embeddings (muy buen "default" si priorizas calidad)
+* [DistilUSE Multilingual v2](https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v2): Embeddings multilingües más livianos (512 dims), buena opción si priorizas velocidad/costo
 
 ## Named Entity Recognition
 * [Wikineural](https://huggingface.co/Babelscape/wikineural-multilingual-ner): Multiidioma
@@ -92,7 +100,10 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 ## Speech Recognition
 * [Whisper (v3 large turbo)](https://huggingface.co/openai/whisper-large-v3-turbo): Modelo de OpenAI, versiones [small](https://huggingface.co/openai/whisper-small), [tiny](https://huggingface.co/openai/whisper-tiny), también hay versiones [rápidas](https://huggingface.co/Systran/faster-whisper-large-v3)
 * [Canary (Nvidia)](https://huggingface.co/collections/nvidia/canary-65c3b83ff19b126a3ca62926): Modelos de Nvidia en 180M y 1B (flash y normal), también [versión basada en Qwen](https://huggingface.co/nvidia/canary-qwen-2.5b)
-* [Parakeet (Nvidia y Projecte Aina)](https://huggingface.co/projecte-aina/parakeet-rnnt-1.1b_cv17_es_ep18_1270h): Modelo de Nvidia finetuneado por la gente de Projecte Aina (Cataluña) para español
+* Parakeet (NVIDIA)
+  * [parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3): ASR multilingüe (incluye español), rápido y con timestamps; muy buena opción para transcripción a escala
+  * [Colección Parakeet](https://huggingface.co/collections/nvidia/parakeet): Variantes CTC/RNNT/TDT para distintos trade-offs de latencia/precisión
+* [Parakeet finetuneado para español (Projecte Aina)](https://huggingface.co/projecte-aina/parakeet-rnnt-1.1b_cv17_es_ep18_1270h): Modelo de Nvidia finetuneado por la gente de Projecte Aina (Cataluña) para español
 * [MMS 1B (Facebook)](https://huggingface.co/facebook/mms-1b-all): entrenado en 1162 idiomas
 * [Seamless (Facebook)](https://huggingface.co/facebook/seamless-m4t-v2-large): Entrenado en 🎤 101 languages for speech input. 💬 96 Languages for text input/output. 🔊 35 languages for speech output., sirve para:
   * Speech-to-speech translation (S2ST)
