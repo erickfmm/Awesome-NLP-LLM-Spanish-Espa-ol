@@ -50,7 +50,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * Kimi
   * [Kimi K2 Thinking](https://huggingface.co/moonshotai/Kimi-K2-Thinking): Modelo de 1T, multiidioma, muy capaz a niveles del estado del arte 
 * [Molmo](https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19)
-* [EuroLLM](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct): Por utter project, consorcio de varias universidades de Alemania
+* [EuroLLM](https://huggingface.co/collections/utter-project/eurollm): Consorcio de universidades alemanas, modelos enfocados en idiomas europeos incluyendo español
 * [Apollo](https://huggingface.co/collections/FreedomIntelligence/apollomoe-and-apollo2-670ddebe3bb1ba1aebabbf2c): Profesor de una universidad China
 * [Smol LM 3 (HuggingFace)](https://huggingface.co/HuggingFaceTB/SmolLM3-3B): LLM pequeño de Huggingface, bastante bueno.
 
@@ -62,6 +62,8 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * [Versiones livianas](https://github.com/dccuchile/lightweight-spanish-language-models)
 * [BETO finetuned on XNLI](https://huggingface.co/Recognai/bert-base-spanish-wwm-cased-xnli)
 * [BETO finetuned en summarization](https://huggingface.co/mrm8488/bert2bert_shared-spanish-finetuned-summarization)
+* [RigoBERTa 2.0](https://huggingface.co/IIC/RigoBERTa-2.0): Modelo BERT robusto entrenado en español, excelente para tareas de NLU
+* [EuroBERT](https://huggingface.co/collections/EuroBERT/eurobert): Colección de modelos BERT multilingües europeos con buen soporte para español
 * [Bertin Project](https://huggingface.co/bertin-project): Proyecto con datasets para crear un BERT en español. y modelos GPT.
 * [Qwen3 Embeddings](https://huggingface.co/collections/Qwen/qwen3-embedding-6841b2055b99c44d9a4c371f): Modelos LLM para generar Embeddings (Similar a NV-EMbed), genera un arreglo de [n_tokens * 1024] donde 1024 es la dimensión de embedding. Por ahora no he visto versiones pooleadas para Sentence Embedding :(
 * [Qwen3 Reranker](https://huggingface.co/collections/Qwen/qwen3-reranker-6841b22d0192d7ade9cdefea): Recibe una tarea (un texto indicando el objetivo de la búsqueda semántica), una serie de queries (frases) emparejadas con una serie de documentos (resultados), y les da un score (puntaje).
@@ -75,6 +77,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [BGE-M3](https://huggingface.co/BAAI/bge-m3): Multidioma. Ventana de 8192 tokens.
 * [Embedding Gemma 300](https://huggingface.co/google/embeddinggemma-300m): Modelo más avanzado de Google, multiidioma
 * [Qwen3 Embedding 0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B): Hay versiones de 4B y más, pero este es más cercano al tamaño estándar, es un LLM que puedes usar como SentenceTransformer, lo que hace internamente es generar el texto dado el prompt que le das (o documento con prompt por defecto) y te genera una respuesta internamente, y te retorna el embedding correspondiente al último token generado.
+* [Paraphrase Multilingual MiniLM](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2): 118M, modelo compacto y rápido para similitud semántica multilingüe, buen balance rendimiento-velocidad
 
 ## Named Entity Recognition
 * [Wikineural](https://huggingface.co/Babelscape/wikineural-multilingual-ner): Multiidioma
@@ -99,12 +102,20 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   * Automatic speech recognition (ASR)
 * [Phi4 Multimodal](https://huggingface.co/microsoft/Phi-4-multimodal-instruct): LLM multimodal que entiende y puede transcribir audio
 * [Voxtral (Mistral)](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507): LLM Multimodal para audio, entrenado en 8 idiomas, puede entender audio o transcribirlo, según el prompt que le des y la temperatura
+* [Voxtral Mini 4B Realtime](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602): 4B, versión en tiempo real optimizada para transcripción rápida y eficiente
+* [VibeVoice ASR](https://huggingface.co/microsoft/VibeVoice-ASR): Modelo de Microsoft especializado en reconocimiento de voz con baja latencia
 
 ## Texto To Speech
 * [MMS (Facebook)](https://huggingface.co/facebook/mms-tts-spa): Español
 * [Bark (Suno)](https://huggingface.co/suno/bark): Multiidioma
 * [Zonoz v0.1-Hybrid](https://huggingface.co/Zyphra/Zonos-v0.1-hybrid): 1.65B, Multiidioma
 * [Kokoro 1.0](https://huggingface.co/hexgrad/Kokoro-82M): 82M, modelo pequeñísimo. 8 idiomas y 54 voces, incluye español.
+* [Qwen3 TTS CustomVoice](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice): 1.7B, soporta clonación de voz personalizada, multiidioma con excelente calidad
+* [Fun CosyVoice3](https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512): 0.5B, modelo compacto con síntesis natural multilingüe
+* [Chatterbox (ResembleAI)](https://huggingface.co/ResembleAI/chatterbox): Modelo conversacional de streaming TTS con baja latencia, ideal para aplicaciones en tiempo real
+* [VibeVoice Realtime 0.5B](https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B): 0.5B, optimizado para síntesis en tiempo real con latencia ultra baja
+* [VibeVoice 1.5B](https://huggingface.co/microsoft/VibeVoice-1.5B): 1.5B, versión más robusta con mayor calidad de voz, multiidioma
+* [Fish S1 Mini](https://huggingface.co/fishaudio/s1-mini): Modelo ligero y eficiente para síntesis de voz con buena calidad en múltiples idiomas
 * [Seamless (Facebook)](https://huggingface.co/facebook/seamless-m4t-v2-large): Entrenado en 🎤 101 languages for speech input. 💬 96 Languages for text input/output. 🔊 35 languages for speech output., sirve para:
   * Speech-to-speech translation (S2ST)
   * Speech-to-text translation (S2TT)
@@ -204,6 +215,9 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 
 ### Sentence Vectors
 * [Spanish Sentence Embeddings](https://github.com/BotCenter/spanish-sent2vec): Calculadas usando el dataset SUC y el programa [sent2vec](https://github.com/epfml/sent2vec)
+
+## Evaluación y Métricas
+* [Wayra Perplexity Estimator](https://huggingface.co/latam-gpt/Wayra-Perplexity-Estimator-55M): 55M, modelo compacto para estimar perplejidad en textos en español, útil para evaluar modelos de lenguaje
 
 ## Datasets
 * [Coleccion de datasets en español por metatext](https://metatext.io/datasets-list/spanish-language)
