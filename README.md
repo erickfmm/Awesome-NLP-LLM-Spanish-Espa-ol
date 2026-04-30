@@ -56,13 +56,23 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
     * [Gemma 3 12B Instruct](https://huggingface.co/google/gemma-3-12b-it): Buen equilibrio calidad/costo
     * [Gemma 3 4B Instruct](https://huggingface.co/google/gemma-3-4b-it): Opción ligera con multimodalidad
     * [Gemma 3 1B Instruct](https://huggingface.co/google/gemma-3-1b-it): Ultra ligero, solo texto y solo inglés
+  * [Gemma 4](https://huggingface.co/collections/google/gemma-4): Serie multimodal con soporte para 140+ idiomas incluyendo español. Modelos densos y MoE, soportan texto, imagen y audio (modelos pequeños). Licencia Apache 2.0
+    * [Gemma 4 E2B IT](https://huggingface.co/google/gemma-4-e2b-it): ~2.3B activados (5.1B con embeddings), multimodal (texto, imagen, audio), ventana 128K tokens. Orientado a dispositivos móviles y edge
+    * [Gemma 4 E4B IT](https://huggingface.co/google/gemma-4-e4b-it): ~4.5B activados (8B con embeddings), multimodal (texto, imagen, audio), ventana 128K tokens. Buen equilibrio para laptops
+    * [Gemma 4 26B A4B IT](https://huggingface.co/google/gemma-4-26b-a4b-it): MoE, 26B total / 4B activados, multimodal (texto, imagen), ventana 256K tokens. Excelente calidad/costo en GPU consumer
+    * [Gemma 4 31B IT](https://huggingface.co/google/gemma-4-31b-it): 31B denso, multimodal (texto, imagen), ventana 256K tokens. Mayor calidad de la familia
 * DeepSeek:
+  * [V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash): MoE de 284B total / 13B activados, contexto de 1M tokens, licencia MIT
+  * [V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro): MoE de 1.6T total / 49B activados, contexto de 1M tokens, licencia MIT
   * [V3](https://huggingface.co/deepseek-ai/DeepSeek-V3): MoE de 671B, código abierto, muy alto rendimiento en razonamiento y código, fuerte en multiidioma
   * [R1](https://huggingface.co/deepseek-ai/DeepSeek-R1): MoE de 687B en total, Entrenado principalmente en Inglés y Chino, pero en sus últimas versiones han mejorado el rendimiendo multi idioma
   * [Distill Qwen 1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B): 1.5B, Entrenado principalmente en Inglés y Chino, generalmente "piensa" en inglés, su rendimiento es bastante bueno en comparación a la cantidad de parámetros
 * Qwen3 (de Alibaba):
   * [Qwen 3](https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f): Serie de modelos que van desde los 0.6B, 1,7B, 4B, 8B, 14B, 32B, y versiones MoE de 30B-A3B (30B en total, 3B activados en cada predicción), 235B-A22B, y versiones actualizadas de los últimos dos modelos MoE
   * [Qwen Coder](https://huggingface.co/collections/Qwen/qwen3-coder-687fc861e53c939e52d52d10): Modelos orientados a la programación, son las versiones MoE finetuneadas
+  * [Qwen 3.6](https://huggingface.co/collections/Qwen/qwen36): Serie de modelos de nueva generación enfocada en razonamiento y código, ventana de 262K tokens (extensible a 1M)
+    * [Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B): 27B denso (BF16), supera modelos MoE mucho más grandes en benchmarks de código
+    * [Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B): MoE de 35B total / 3B activados (BF16), muy eficiente en inferencia
 * Kimi
   * [Kimi K2 Thinking](https://huggingface.co/moonshotai/Kimi-K2-Thinking): Modelo de 1T, multiidioma, muy capaz a niveles del estado del arte 
 * [Molmo](https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19)
