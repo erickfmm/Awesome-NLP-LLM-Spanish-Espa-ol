@@ -21,6 +21,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   - [🗄️ Bases de Datos de Embeddings y Visualizadores](#️-bases-de-datos-de-embeddings-y-visualizadores)
   - [🔭 Herramientas de Observabilidad](#-herramientas-de-observabilidad)
   - [📄 Preprocesamiento (de PDF u otro a Markdown/JSON)](#-preprocesamiento-de-pdf-u-otro-a-markdownjson)
+  - [🛡️ Guardrails (librerias y modelos)](#️-guardrails-librerias-y-modelos)
 - [📦 VectorStores Precomputados](#-vectorstores-precomputados)
   - [Word Vectors](#word-vectors)
   - [Sentence Vectors](#sentence-vectors)
@@ -31,6 +32,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
   - [Etiquetado](#etiquetado)
   - [Mapudungun](#mapudungun)
 - [🗂️ Mis Datasets (erickfmm)](#️-mis-datasets-erickfmm)
+- [🧠 Mis Modelos (erickfmm)](#-mis-modelos-erickfmm)
 
 ---
 
@@ -113,15 +115,27 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * Kimi (Moonshot AI)
   * [Kimi K2 Thinking](https://huggingface.co/moonshotai/Kimi-K2-Thinking): MoE de 1T total / 32B activados, multiidioma, muy capaz a niveles del estado del arte, orientado a tareas agénticas y razonamiento extendido
   * [Colección Kimi K2](https://huggingface.co/collections/moonshotai/kimi-k2): Incluye versiones Base e Instruct, con capacidades multimodales en modelos K2.5/K2.6
+  * [Kimi K2.7 Code](https://huggingface.co/moonshotai/Kimi-K2.7-Code): La versión más reciente de Kimi para tareas de código y flujos agénticos largos (1T total / 32B activos)
+* MiniMax
+  * [MiniMax-M2.7](https://huggingface.co/MiniMaxAI/MiniMax-M2.7): Modelo MoE open de MiniMax orientado a tareas complejas de razonamiento, agentes y coding
+  * [MiniMax-M3](https://huggingface.co/MiniMaxAI/MiniMax-M3): Nueva generación multimodal (texto, imagen y video) en HuggingFace
+* MiMo (Xiaomi)
+  * [MiMo-7B-RL](https://huggingface.co/XiaomiMiMo/MiMo-7B-RL): Modelo de razonamiento de Xiaomi entrenado con RL (MiMo, no "memo")
 * GLM (Zhipu AI / Tsinghua)
   * [Colección GLM-4](https://huggingface.co/collections/THUDM/glm-4-series): Serie de modelos multiidioma (chino y otros), open source bajo licencia MIT
   * [GLM-4-32B](https://huggingface.co/THUDM/GLM-4-32B-0414): 32B, muy capaz en razonamiento, código y chat, compite con modelos mucho más grandes
   * [GLM-4-9B-Chat](https://huggingface.co/THUDM/glm-4-9b-chat): 9B, buena opción liviana con ventana de 128K tokens
   * [GLM-Z1-32B](https://huggingface.co/THUDM/GLM-Z1-32B-0414): 32B, versión especializada en razonamiento profundo y matemáticas
+  * [GLM-5.1](https://huggingface.co/zai-org/GLM-5.1): Última generación GLM multiidioma de Zhipu/Z.ai publicada en HuggingFace
 * NVIDIA
   * [Colección Nemotron](https://huggingface.co/collections/nvidia/nvidia-nemotron-v3): Familia de modelos abiertos de NVIDIA, MoE con enfoque en agentes multi-paso y workflows empresariales
   * [Nemotron-Nano (~30B MoE)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8): MoE de 30B total / 3B activados, rápido, bueno para sub-agentes y despliegue en edge, contexto de 1M tokens
   * [Nemotron-Super (~120B MoE)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8): MoE de 120B total / 12B activados, pensado para workflows multi-agente empresariales
+  * [Nemotron Ultra (~550B MoE)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4): Modelo flagship de Nemotron para tareas de razonamiento avanzado y agentes
+* OpenAI (modelos en HuggingFace)
+  * [gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b): Versión OSS de OpenAI para uso local/inferencia open-weight
+  * [gpt-oss-120b](https://huggingface.co/openai/gpt-oss-120b): Variante más grande de GPT-OSS
+  * [privacy-filter](https://huggingface.co/openai/privacy-filter): Modelo de OpenAI para detección/filtrado de PII (~1.5B parámetros)
 * [Molmo](https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19)
 * [EuroLLM](https://huggingface.co/collections/utter-project/eurollm): Consorcio de universidades alemanas, modelos enfocados en idiomas europeos incluyendo español
 * [Apollo](https://huggingface.co/collections/FreedomIntelligence/apollomoe-and-apollo2-670ddebe3bb1ba1aebabbf2c): Profesor de una universidad China
@@ -315,6 +329,18 @@ Herramientas para almacenar, buscar y visualizar embeddings/vectores, fundamenta
 * [MinerU](https://github.com/opendatalab/MinerU): Requiere mínimo 16GB recomendado 32GB, cpu o gpu o mps
 * [MegaParser](https://github.com/QuivrHQ/MegaParse): Usa api de openai o anthropic, y tesseract para ocr, lo que lo hace liviano de ejecutarse pero necesitas tener la api.
 
+### 🛡️ Guardrails (librerias y modelos)
+* Librerías / frameworks
+  * [Guardrails AI](https://github.com/guardrails-ai/guardrails): Validación de salidas, reglas y controles para apps LLM
+  * [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails): Rails de seguridad y políticas conversacionales para agentes/chatbots
+  * [Llama Guard (framework)](https://github.com/meta-llama/PurpleLlama): Proyecto y herramientas de seguridad de Meta para moderación
+* Modelos en HuggingFace (Text-Generation / VLM safety)
+  * [Llama Guard 3 8B](https://huggingface.co/meta-llama/Llama-Guard-3-8B): Clasificador de seguridad para prompts y respuestas en texto
+  * [ShieldGemma](https://huggingface.co/google/shieldgemma-2b): Modelo de seguridad para clasificación de contenido en pipelines LLM
+  * [gpt-oss-safeguard-20b](https://huggingface.co/openai/gpt-oss-safeguard-20b): Guardrail de OpenAI para filtrar entradas/salidas en flujos generativos
+  * [privacy-filter](https://huggingface.co/openai/privacy-filter): Filtro de PII de OpenAI para proteger datos sensibles en generación de texto
+  * [LlavaGuard (búsqueda)](https://huggingface.co/models?search=LlavaGuard): Modelos VLM orientados a moderación/safeguarding multimodal
+
 ## 📦 VectorStores Precomputados
 ### Word Vectors
 * [Word Vector 3B Words](https://www.kaggle.com/datasets/julianusugaortiz/spanish-3b-words-word2vec-embeddings)
@@ -396,3 +422,9 @@ Datos obtenidos mediante scraping a datos públicos MINEDUC (Ministerio de Educa
 * [Proyectos Educativos Institucionales (PEI)](https://www.kaggle.com/datasets/erickfmm/education-pei-pdf): En pdf
 * [Reglamentos de Convivencia](https://www.kaggle.com/datasets/erickfmm/education-reglamento-convivencia-pdf): En pdf
 * [Reglamentos de Evaluación](https://www.kaggle.com/datasets/erickfmm/education-reglamentos-de-evaluacin-pdf): En pdf
+
+## 🧠 Mis Modelos (erickfmm)
+Modelos publicados por el autor de este repositorio en HuggingFace (agregados al final como referencia):
+
+* [Mix_TinyLlama-3x1B_oasst2_chatML_Cluster_3_2_1_V1-GGUF](https://huggingface.co/erickfmm/Mix_TinyLlama-3x1B_oasst2_chatML_Cluster_3_2_1_V1-GGUF): Modelo GGUF cuantizado (~3B) para inferencia local
+* [mrbert-es-sbert-ft](https://huggingface.co/erickfmm/mrbert-es-sbert-ft): Finetuning de mRBERT para embeddings/similitud semántica en español
