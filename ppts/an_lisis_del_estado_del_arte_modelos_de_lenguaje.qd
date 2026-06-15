@@ -1,0 +1,240 @@
+.docname {Análisis del Estado del Arte Modelos de Lenguaje ()}
+.doctype {slides}
+.doclang {Spanish}
+
+## Estado del arte de Modelos de Lenguaje 
+
+Modelos .................................................................................................................................................. 1 
+
+Tipos de modelos de lenguaje modernos ........................................................................................... 1 Cuantización ........................................................................................................................................ 1 Ejemplos de modelos fundacionales LLM Open Source más famosos ............................................... 2 Ejemplos de modelos BERT y mt5 más útiles, seleccionados ............................................................. 4 Finetunning (Supervised Fine tunning, SFT) ........................................................................................... 5 Librerías para hacer Fine Tunning ....................................................................................................... 6 Casos de ejemplo ................................................................................................................................ 6 Optimización de preferencias ................................................................................................................. 7 
+
+## Modelos 
+
+Un modelo de Machine Learning es una ecuación o fórmula matemática que tiene variables “vacías” o sin valor (llamados parámetros), las cuales se completan en la fase de entrenamiento, a través de un método de optimización. 
+
+Las redes neuronales son una arquitectura o “meta modelo”, que permite crear diferentes modelos, a través del uso de los llamados “hiper parámetros” que crean diferentes versiones de una red neuronal. 
+
+Según el patrón de conexión de las neuronas, las redes neuronales se clasifican en diferentes “arquitecturas”, como las redes neuronales convolucionales, recurrentes, y ahora último los transformers. 
+
+## Tipos de modelos de lenguaje modernos 
+
+Existen varios tipos de modelos de lenguaje en el mundo open source. Las principales arquitecturas basadas en Transformers conforman los principales 3 tipos de modelos (creados el 2019, 2020 y 2021 respectivamente). 
+
+- BERT: Para tareas simples, como crear embeddings, MASK inference (adivinar la palabra en medio) y QA cortas 
+
+- MT5: Para tareas de traducción, summarization y QA corto (un poco más largo que BERT) 
+
+- LLM (Large Language Model) / SLM (Small Language Model): modelos basados en la arquitectura GPT 
+
+   - Mono-modelos: Un único modelo, la forma típica 
+
+   - Mixture Of Experts (MoE): Un modelo compuesto de varios modelos expertos en ciertos temas cada uno. Es más eficiente. Se puede “forzar” la expertiz de cada submodelo, o bien dejarlo a la red que escoja la expertiz. 
+
+## Cuantización 
+
+Los modelos pueden estar en su “forma base” como fueron entrenados, la mayoría usa formato “HF” (coma flotante de 16 bits), o bien se pueden usar “cuantizados” para que pesen menos (los
+---
+
+# Diapositiva 2
+
+lobotimiza un poco, es decir les quita rendimiento/accuracy), en números enteros de 8, 6, 5, 4, 3 o 2 bits. En general de 8 bits se considera que pierde muy poco rendimiento, casi nada, y hasta 5 bits es recomendable, 4 bits pierde mucha información y 2 bits habla muchas tonterías (sólo para hacer pruebas experimentales, no para uso en producción). 
+
+Ejemplos de modelos fundacionales LLM Open Source más famosos A continuación modelos de lenguaje por empresas: 
+
+|Modelo|Idioma|Empresa|RoPe|Parámetros|Peso HF*|Link|
+|---|---|---|---|---|---|---|
+|Falcon|Multi|Emiratos<br>Árabes|2048|7B|15GB|https://huggingface.co/tiiuae/fa<br>lcon-7b|
+|Falcon-40B|Multi|Emiratos<br>Árabes|2048|40B|84GB.|https://huggingface.co/tiiuae/fa<br>lcon-40b|
+|**Llama2-7B**|Inglés|Faceboo<br>k|4k|7B|13.5GB|https://huggingface.co/meta-<br>llama/Llama-2-7b-chat-hf|
+|Llama2-13B|Inglés|Faceboo<br>k|4k|13B|26GB|https://huggingface.co/meta-<br>llama/Llama-2-13b-chat-hf|
+|Llama2-70B|Inglés|Faceboo<br>k|4k|70B|150GB|https://huggingface.co/meta-<br>llama/Llama-2-70b-chat-hf|
+|Llama3-8B|Multi|Faceboo<br>k|8k|8B||https://huggingface.co/meta-<br>llama/Meta-Llama-3-8B-Instruct|
+|Llama3-70B|Multi|Faceboo<br>k|8k|70B||https://huggingface.co/meta-<br>llama/Meta-Llama-3-70B-<br>Instruct|
+|Gemma-2b|Inglés|Google||2.51B||https://huggingface.co/google/g<br>emma-2b-it|
+|Gemma-7b|Inglés|Google||8.54B||https://huggingface.co/google/g<br>emma-7b-it|
+|Gemma2-<br>9b|||||||
+|Gemma2-<br>27b|||||||
+|Phi2|Inglés|Microsof<br>t|2048|2.78B||https://huggingface.co/microsof<br>t/phi-2|
+|Phi-3-mini|Princip<br>alment<br>e inglés|Microsof<br>t|4k o<br>128k|3.82B||https://huggingface.co/microsof<br>t/Phi-3-mini-4k-instructo<br>https://huggingface.co/microsof<br>t/Phi-3-mini-128k-instruct|
+|Phi-3-small|Princip<br>alment<br>e inglés|Microsof<br>t|8k o<br>128k|7.39B||https://huggingface.co/microsof<br>t/Phi-3-small-8k-instructo<br>https://huggingface.co/microsof<br>t/Phi-3-small-128k-instruct|
+|Phi-3-<br>medium|Princip<br>alment<br>e inglés|Microsof<br>t|4k o<br>128k|14B||https://huggingface.co/microsof<br>t/Phi-3-medium-4k-instructo<br>https://huggingface.co/microsof<br>t/Phi-3-medium-128k-instruct|
+|Phi-3-vision|Princip<br>alment<br>e inglés|Microsof<br>t|128k|4.15B||https://huggingface.co/microsof<br>t/Phi-3-vision-128k-instruct|
+|Nemotron-<br>340B|50<br>idioma|Nvidia|4096|340B||https://huggingface.co/nvidia/N<br>emotron-4-340B-Instructo|
+---
+
+# Diapositiva 3
+
+||s y 40<br>lenguaj<br>es de<br>código||||||||https://huggingface.co/nvidia/N<br>emotron-4-340B-Reward|https://huggingface.co/nvidia/N<br>emotron-4-340B-Reward|
+|---|---|---|---|---|---|---|---|---|---|---|
+|**Mistral-0.2**|Inglés|MistralAI||7B|||15GB||https://huggingface.co/mistralai<br>/Mistral-7B-Instruct-v0.2||
+|**Mistral-0.3**|Multi|MistralAI||7B|||||https://huggingface.co/mistralai<br>/Mistral-7B-Instruct-v0.3||
+|Mixtral|Multi5|MistralAI||8x7B|||95GB (full<br>32 bits)||https://huggingface.co/mistralai<br>/Mixtral-8x7B-Instruct-v0.1||
+|Mixtral|Multi|MistralAI||8x22B (141)|||||https://huggingface.co/mistralai<br>/Mixtral-8x22B-Instruct-v0.1||
+|**CommandR**|Multi1<br>0|Coheren<br>ce||35B|||69.7 GB||https://huggingface.co/CohereF<br>orAI/c4ai-command-r-v01||
+|**DBRX**||Databric<br>ks|32768|132B (16<br>expertos y<br>elige 4)|||||https://huggingface.co/databric<br>ks/dbrx-instruct||
+|**Grok**||Twitter|8,192|314B|||||https://huggingface.co/xai-<br>org/grok-1||
+|**SmolLM-**<br>**135M**||HuggingF<br>ace||135M|||||https://huggingface.co/Hugging<br>FaceTB/SmolLM-135M-Instruct||
+|**SmolLM-**<br>**360M**||HuggingF<br>ace||360M|||||https://huggingface.co/Hugging<br>FaceTB/SmolLM-360M-Instruct||
+|**SmolLM-**<br>**1.7B**||HuggingF<br>ace||1.7B|||||https://huggingface.co/Hugging<br>FaceTB/SmolLM-1.7B-Instruct||
+|**Mistral-**<br>**Nemo**|Multi|MistralAI||12B|||||||
+|**Codestral**|Progra<br>mming|MistralAI|||||||||
+|**Mathstral**||MistralAI|||||||||
+|**DCLM**||Apple|||||||||
+|Otros modelos, de uso académico o|||experimental:||||||||
+|Modelo|Idioma|Principal cualidad|||RoPe|Parám<br>etros||Peso HF*||Link|
+|Tinyllama|Sólo<br>inglés|Académico, es un<br>modelo muy liviano.<br>Trained on 90 days<br>using 16 A100-40G<br>GPUs on 3 trillion<br>tokens||||1.1B||2.2GB||https://huggingface.co/Ti<br>nyLlama/TinyLlama-1.1B-<br>Chat-v1.0|
+|**Tinyllama**|Español|Experimental||||1.1b||2.2GB||https://huggingface.co/bi<br>ololab/tinyllama-<br>spanish_16bit|
+|MoE<br>Tinyllama<br>3x1.1B|Multi2<br>6|Experimental||||3x1.1B||5.2GB||https://huggingface.co/N<br>ickyNicky/Mix_TinyLlama<br>-<br>3x1B_oasst2_chatML_Clu<br>ster_3_2_1_V1|
+---
+
+# Diapositiva 4
+
+|**Mixtral Q8**|Multi5|Versión cuantizada<br>del original||8x7B|49.62 GB<br>(52.12 GB for<br>inference)|https://huggingface.co/T<br>heBloke/Mixtral-8x7B-<br>v0.1-GGUF|
+|---|---|---|---|---|---|---|
+|**MiniCPM-**<br>**Llama3-V**<br>**2.5**|Inglés y<br>Chino|Versión con visión, de<br>una empresa China||8.54||https://huggingface.co/o<br>penbmb/MiniCPM-<br>Llama3-V-2_5|
+|**Jamba**|Multi?|No usa Transformers<br>sino otra arquitectura<br>llamada Mamba|256K|51.6B|102GB|https://huggingface.co/ai<br>21labs/Jamba-v0.1|
+|**JetMoE**|Multi|MIT, Princeton, y<br>otras, Académico,<br>Entrenado con datos<br>de muy buena<br>calidad, alcanza el<br>rendimiento de<br>llama2 gastando<br>0.08Millones en su<br>entrenamiento (96<br>H100por 2 semanas)|4096|8B<br>(MoE<br>con<br>2.2<br>active)|17GB|https://huggingface.co/je<br>tmoe/jetmoe-8b-chat|
+|**Flor-1.3B**|Ing-<br>esp-cat|Basado en BLOOM<br>para español y<br>catalán||1.3B||https://huggingface.co/p<br>rojecte-aina/FLOR-1.3B-<br>Instructed|
+|**Flor-6.3B**|Ing-<br>esp-cat|Basado en BLOOM<br>para español y<br>catalán||6.3B||https://huggingface.co/p<br>rojecte-aina/FLOR-6.3B-<br>Instructed|
+|**Aguila-7B**|Ing-<br>esp-cat|Basado en Falcon<br>para español y<br>catalán||7B||https://huggingface.co/p<br>rojecte-aina/aguila-7b|
+
+*Peso HF es en 16 bits float (cuantizado en Q8 (entero de 8 bits) pesa aproximadamente la mitad, en Q4 un cuarto, etcétera). 
+
+Ejemplos de modelos BERT y mt5 más útiles, seleccionados 
+
+|Nombre|Autor|Función|Comentarios|Link|
+|---|---|---|---|---|
+|BETO|DCC Uchile|Existen<br>diversos<br>modelos para<br>feature<br>extraction (por<br>palabra), Fill<br>MASK, entre<br>otros|Es un<br>referente y<br>usado como<br>modelo<br>fundacional<br>para hacer<br>FT|https://huggingface.co/dccuchile/ber<br>t-base-spanish-wwm-casedo<br>https://huggingface.co/dccuchile/ber<br>t-base-spanish-wwm-uncased|
+|Tulio|DCC Uchile|Fill MASK|Entrenado<br>con español<br>general y<br>Chileno<br>además|https://huggingface.co/dccuchile/tuli<br>o-chilean-spanish-bert|
+|Patana|DCC Uchile|Fill MASK|Entrenado<br>sólo con<br>español|https://huggingface.co/dccuchile/pat<br>ana-chilean-spanish-bert|
+---
+
+# Diapositiva 5
+
+||||Chileno<br>(noticias,<br>webs,<br>reclamos y<br>tweets)||
+|---|---|---|---|---|
+|NV-<br>embed|Nvidia|Sentence<br>Transformers|Se puede<br>intencionar<br>el<br>embedding|https://huggingface.co/nvidia/NV-<br>Embed-v1|
+|Fast-<br>Embed||Sentence<br>Transformers|Librería|https://github.com/qdrant/fastembe<br>d|
+|Sentence<br>Similarity<br>Spanish|HiIamSid|Sentence<br>Transformers|La he usado<br>con buenos<br>resultados,<br>tiene miles<br>de<br>descargas<br>mensuales|https://huggingface.co/hiiamsid/sent<br>ence_similarity_spanish_es|
+|**nomic-**<br>**embed-**<br>**text-v1.5**|Nomic-AI|Sentence<br>Transformers|Redimensio<br>nable|https://huggingface.co/nomic-<br>ai/nomic-embed-text-v1.5|
+|**PubMed**<br>**BERT**<br>**Embeddi**<br>**ngs**||Sentence<br>Transformers|Hecho en<br>base a<br>pubmed|https://huggingface.co/NeuML/pubm<br>edbert-base-embeddings|
+|**The**<br>**crispy**<br>**sentence**<br>**embeddi**<br>**ng family**<br>**from**<br>**mixedbre**<br>**ad ai.**|**mixedbread-**<br>**ai **|Sentence<br>Transformers||https://huggingface.co/mixedbread-<br>ai/mxbai-embed-large-v1|
+|GliNER|Estudiante<br>phd en LIPN<br>(París)|NER|Detecta<br>Entidades<br>dada una<br>categoría|https://huggingface.co/urchade/gline<br>r_multi-v2.1|
+|Bert2Bert|Un<br>emprendedor|Summarization|FT de BETO|https://huggingface.co/mrm8488/ber<br>t2bert_shared-spanish-finetuned-<br>summarization|
+
+## Finetunning (Supervised Fine tunning, SFT) 
+
+Finetunning es el proceso de tomar un modelo fundacional, como los de arriba, y entrenarlo para que siga determinado idioma, estilo, conocimiento. 
+
+- Full sin optimizaciones: No recomendado 
+
+- PEFT: Parameter Eficient Fine Tuning, entrenar sólo unos pocos parámetros, no todos.
+---
+
+# Diapositiva 6
+
+- LoRa: Descompone la matriz de pesos en 2 matrices más pequeñas. Entrena esas 2 matrices pequeñas y luego el resultado del modelo es la suma de estas 2 matrices multiplicadas + el modelo original 
+
+   - QLoRa: LoRa pero cuantizando la matriz de pesos. 
+
+   - Para más detalles recomiendo leer 
+
+         - https://aman.ai/primers/ai/parameter-efficient-fine-tuning/# 
+
+         - https://huggingface.co/docs/peft/main/en/conceptual_guides/lora 
+
+- MEFT: Memory Eficient. Técnicas para disminuir la memoria 
+
+   - Optimizer cuantización: Cuantizar los parámetros del optimizador, que sin modificar pesan aprox lo mismo que el modelo original. 
+
+   - Gradient ranking: usar LoRa sobre la matriz de gradientes, permite entrenar Fullparameter usando apenas un 25% más de memoria que el modelo, es muy 
+
+      - prometedor el método, se llama **GaLore** (paper **: https://arxiv.org/pdf/2403.03507 )** 
+
+   - LOMO: Un método que reduce el 10% de memoria, no he leído cómo 
+
+Para información MUY técnica visitar: 
+
+https://huggingface.co/docs/transformers/perf_train_gpu_one 
+
+## Librerías para hacer Fine Tunning 
+
+- Llama Factory (Parece que es la más fácil, es con interfaz web y un Docker) 
+
+- Unsolth (tiene versión gratis y de pago) 
+
+- Axolotl (pasó de moda parece) 
+
+- Ludwig 
+
+- AutoTrain (La oficial de Hugging Face) 
+
+## Casos de ejemplo 
+
+- Usando LOMO: Full parameter 65B model on a single machine with 8 RTX 3090, each with 24GB memory. 
+
+- Mixtral 8x7B en LoRa con modelo Q4: 
+
+## `o` It only requires **28GB** to fine-tune the **8x7B** model with LLaMA Factory . 
+
+`o` https://huggingface.co/mistralai/Mixtral-8x7B-v0.1/discussions/10 
+
+- Mixtral 8x7B LoRa Q4 
+
+   - A100 40GB 
+
+   - https://www.reddit.com/r/LocalLLaMA/comments/18gwoke/fine_tuning_mixtral_8 x7b/ 
+
+- Llama Factory (una librería para hacer SFT), se puede optimizar aún más con técnicas MEFT, pero aquí una muestra de requerimiento de memoria estimados (tomar como el máximo, se puede mejorar) 
+
+## **Hardware Requirement** 
+
+* _estimated_ 
+
+|**Method**|**Bits**|**7B**|**13B**|**30B**|**70B**|**8x7B**|
+|---|---|---|---|---|---|---|
+|Full|AMP|120GB|240GB|600GB|1200GB|900GB|
+|Full|16|**60GB**|120GB|300GB|600GB|400GB|
+|GaLore|16|16GB|32GB|64GB|160GB|120GB|
+|Freeze|16|20GB|**40GB**|80GB|200GB|160GB|
+---
+
+# Diapositiva 7
+
+|LoRA|16|16GB|32GB|**64GB**|160GB|120GB|
+|---|---|---|---|---|---|---|
+|QLoRA|8|10GB|20GB|40GB|80GB|**60GB**|
+|QLoRA|4|6GB|12GB|24GB|48GB|30GB|
+|QLoRA|2|4GB|8GB|16GB|24GB|18GB|
+
+- Unsloth (librería para hacer LoRa muy prometedora) 
+
+   - **0% loss in accuracy** - no approximation methods - all exact. 
+
+   - Supports 4bit and 16bit QLoRA / LoRA finetuning via bitsandbytes. 
+
+   - DPO SUpport 
+
+   - Mistral7B en sólo 12.4GB de VRAM!!! 
+
+   - CodeLlama 34B con sólo 27.4GB VRAM!!! 
+
+   - https://github.com/unslothai/unsloth 
+
+- Axolotl (otra librería para hacer SFT) 
+
+   - https://github.com/OpenAccess-AI-Collective/axolotl 
+
+## Optimización de preferencias 
+
+La optimización de preferencias permite que el modelo escoja la mejor respuesta dado un set de pregunta-respuesta. 
+
+Para información técnica: https://huggingface.co/blog/pref-tuning (recomendable leer hasta “Links”, después es MUY técnico todo) 
+
+- DPO (Direct preference optimization): Requiere un dataset con una pregunta – una respuesta elegida, y una o más respuestas rechazadas. 
+
+![](images/an_lisis_del_estado_del_arte_modelos_de_lenguaje/Análisis_del_Estado_del_Arte_Modelos_de_Lenguaje_--.pdf-0007-14.png)
+
+- IPO (Identity Preference Optimisation): Método optimizado de DPO 
+
+- KTO (Kahneman-Tversky Optimisation): permite usar ejemplos etiquetados con manito arriba y manito abajo (for example, the or icons one sees in chat UIs) por lo que es más fácil aplicarlo en la práctica.

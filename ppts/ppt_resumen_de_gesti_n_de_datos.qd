@@ -1,0 +1,176 @@
+.docname {PPT - Resumen de gestión de datos}
+.doctype {slides}
+.doclang {Spanish}
+
+# Gestión de datos 
+
+Por: Erick Merino
+---
+
+## Modelos de datos 
+
+- Conceptuales 
+
+- Lógicos 
+
+- Físicos
+---
+
+# Diapositiva 3
+
+![](images/ppt_resumen_de_gesti_n_de_datos/PPT_-_Resumen_de_gestión_de_datos.pdf-0003-00.png)
+
+## Modelos de datos 
+
+- Conceptuales 
+
+• también conocidos como modelos de dominio, ofrecen una imagen general de lo que contendrá el sistema, cómo se organizará y qué reglas de negocio se aplican. Los modelos conceptuales normalmente se crean como parte del proceso de recopilación de los requisitos iniciales del proyecto. Por lo general, incluyen clases de entidad (que definen los tipos de cosas que son importantes para representar el negocio en el modelo de datos), sus características y restricciones, las relaciones entre ellas y los requisitos relevantes de seguridad e integridad de los datos. 
+
+- Lógicos 
+
+- Físicos
+---
+
+# Diapositiva 4
+
+![](images/ppt_resumen_de_gesti_n_de_datos/PPT_-_Resumen_de_gestión_de_datos.pdf-0004-00.png)
+
+## Modelos de datos 
+
+## • Conceptuales 
+
+## • Lógicos 
+
+• son menos abstractos y brindan más detalles sobre los conceptos y las relaciones en el dominio bajo consideración. Se sigue uno de los sistemas de notación de modelado de datos formales. Estos indican atributos de datos, como tipos de datos y sus longitudes correspondientes, y muestran las relaciones entre entidades. Los modelos de datos lógicos no especifican ningún requisito técnico del sistema. 
+
+## • Físicos
+---
+
+## Modelos de datos 
+
+- Conceptuales 
+
+## • Lógicos 
+
+## • Físicos 
+
+![](images/ppt_resumen_de_gesti_n_de_datos/PPT_-_Resumen_de_gestión_de_datos.pdf-0005-04.png)
+
+• son menos abstractos y brindan más detalles sobre los conceptos y las relaciones en el dominio bajo consideración. Se sigue uno de los sistemas de notación de modelado de datos formales. Estos indican atributos de datos, como tipos de datos y sus longitudes correspondientes, y muestran las relaciones entre entidades. Los modelos de datos lógicos no especifican ningún requisito técnico del sistema.
+---
+
+## Marcos de trabajo 
+
+## • TOGAF 
+
+   - Arquitectura de negocio, que define la estructura organizativa, la estrategia de 
+
+   - negocio y los procesos de la empresa. 
+
+   - Arquitectura de datos, que describe los activos de datos físicos, lógicos y 
+
+   - conceptuales y cómo se almacenan y gestionan a lo largo del ciclo de vida. 
+
+   - Arquitectura de aplicaciones, que representa los sistemas de aplicaciones, y 
+
+   - cómo se relacionan con los principales procesos de negocio y entre ellos. 
+
+   - • Arquitectura técnica, que describe la infraestructura tecnológica (hardware, 
+
+   - software y redes) necesaria para dar soporte a las aplicaciones más importantes. 
+
+- DAMA 
+
+## • Zachman
+---
+
+## Marcos de trabajo 
+
+- TOGAF 
+
+   - Iterar a través de las distintas fases 
+
+- DAMA 
+
+- Zachman 
+
+![](images/ppt_resumen_de_gesti_n_de_datos/PPT_-_Resumen_de_gestión_de_datos.pdf-0007-05.png)
+---
+
+## Marcos de trabajo 
+
+## • TOGAF 
+
+## • DAMA 
+
+• DAMA International, originalmente fundada como Data Management Association International, es una organización sin ánimo de lucro dedicada al avance en la gestión de datos y la información. Su cuerpo de conocimiento de gestión de datos, DAMA-DMBOK 2, cubre la arquitectura de datos, así como el gobierno y la ética, el modelado y el diseño de los datos, el almacenamiento, la seguridad y la integración 
+
+## • Zachman
+---
+
+# Diapositiva 9
+
+![](images/ppt_resumen_de_gesti_n_de_datos/PPT_-_Resumen_de_gestión_de_datos.pdf-0009-00.png)
+
+## Marcos de trabajo 
+
+## • TOGAF 
+
+## • DAMA 
+
+- Priorizar dimensiones 
+
+- Evaluar cada dimensión por 
+
+- Cada proceso de datos 
+
+## • Zachman
+---
+
+## **Sistemas de gestión de datos** 
+
+- Data warehouse: Almacén estructurado de datos para consulta para sistemas de reportes, son todos datos “tabulares” o “planillas” 
+
+- Data marts: Almacenes para consumo de datos, por área de negocio 
+
+- Data lake: Lago de datos no estructurados donde se aloja todo, un repositorio general de los datos (Ej: un Google Drive) 
+
+- Data lakehouse: Lago de datos estructurado y ordenado con gobernanza y metadatos
+---
+
+## **Arquitecturas de datos** 
+
+![](images/ppt_resumen_de_gesti_n_de_datos/PPT_-_Resumen_de_gestión_de_datos.pdf-0011-01.png)
+
+- Data fabric 
+
+   - Arquitectura centralizada 
+
+• Los datos van por un “camino” Desde los orígenes hasta los consumidores de analítica 
+
+## • Data mesh
+---
+
+## **Arquitecturas de datos** 
+
+- Data fabric 
+
+## • Data mesh 
+
+![](images/ppt_resumen_de_gesti_n_de_datos/PPT_-_Resumen_de_gestión_de_datos.pdf-0012-03.png)
+---
+
+## Ventajas de la gestión de datos 
+
+- Reducción de la redundancia 
+
+- Mejora de la calidad de los datos 
+
+- Habilitación de la integración 
+
+- Gestión del ciclo de vida de los datos 
+
+- Otros
+---
+
+# Gracias
