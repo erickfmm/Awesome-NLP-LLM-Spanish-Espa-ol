@@ -357,6 +357,7 @@ Herramientas para almacenar, buscar y visualizar embeddings/vectores, fundamenta
 * [CHOCLO](https://huggingface.co/datasets/latam-gpt/CHOCLO): Benchmark de conocimiento cultural latinoamericano con 100K+ preguntas sobre geografía, fauna, flora, gastronomía y cultura de 18 países de América Latina, en tres niveles de dificultad. Creado por CENIA/Latam-GPT. Licencia MIT
 * [TRUEQUE](https://huggingface.co/datasets/latam-gpt/Trueque-Benchmark-beta-0.1): Benchmark colaborativo revisado por humanos, con 500 preguntas sobre historia, cultura, geografía y gastronomía de 20 países de América Latina. Disponible en español y portugués. Creado por CENIA/Latam-GPT. Licencia Apache 2.0
 * [IberBench](https://huggingface.co/iberbench): Benchmark multilingüe y multitarea para evaluar LLMs en lenguas ibéricas (español de España y LATAM, portugués, catalán, euskera, gallego), con leaderboard público. [Ver leaderboard](https://huggingface.co/spaces/iberbench/leaderboard)
+* [Ponys AI Character Consistency Benchmark](https://huggingface.co/datasets/wujoe132/ponys-multilingual-ai-character-consistency-benchmark): Protocolo prerregistrado de 140 casos para evaluar memoria, estabilidad de persona, estado de relación e identidad visual en siete configuraciones lingüísticas, incluido español latinoamericano. Los resultados aún no se han recogido. [DOI](https://doi.org/10.5281/zenodo.22172094) · [Fuente](https://ponys.ai/)
 
 ## 📚 Datasets
 * [Colección de datasets en español por metatext](https://metatext.io/datasets-list/spanish-language)
