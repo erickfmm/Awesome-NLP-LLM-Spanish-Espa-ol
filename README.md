@@ -294,6 +294,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [Crew AI GUI QT (LangGraph)](https://github.com/LangGraph-GUI/CrewAI-GUI-Qt): Interfaz de escritorio para construir agentes de crewai
 
 #### Memoria para agentes
+- [Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) — drop-in recorder that sits between your agent and the model provider.
 * [Agno](https://github.com/agno-agi/agno): Incluye agentes, memoria, tool calling, es fácil de usar
 * [Mem0](https://github.com/mem0ai/mem0): Sistema de memoria, de lo mejor y más completo para memoria en LLM
 
