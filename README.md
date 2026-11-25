@@ -44,6 +44,7 @@ Si quieres cursos, libros y tutoriales aprobados (y probados) por mi: [Ruta de A
 * [Corpus: Evaluation datasets for ES & LATAM (SomosNLP)](https://huggingface.co/collections/somosnlp/corpus-evaluation-datasets-for-es-and-latam): Batería de datasets para evaluar LLMs en español y variantes (oro para benchmarks)
 * [Corpus: Instructions in Spanish and related languages (SomosNLP)](https://huggingface.co/collections/somosnlp/corpus-instructions-in-spanish-and-related-languages): Colección de datasets de instrucciones/SFT para afinar modelos en español
 * [Instruction-Tuned Models ES (SomosNLP)](https://huggingface.co/collections/somosnlp/instruction-tuned-models-es): Curación de modelos instruct en español y lenguas cercanas (ahorra horas de búsqueda)
+* [Awesome IA para Pymes](https://github.com/MatiasConsultor/awesome-ia-pymes): Lista curada de herramientas de IA en español para pymes y autónomos sin perfil técnico, organizada por área de negocio y con una sección de privacidad y RGPD
 
 ## 🤖 LLM en Español
 * [LINCE ZERO](https://huggingface.co/clibrain/lince-zero): Modelo español simple (ZERO), hay una versión FULL que hay que solicitarla
